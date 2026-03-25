@@ -9,7 +9,7 @@ This document describes the end-to-end workflow used in this branch for:
 
 ## 1. Environment and when to use each
 
-Use CMSSW environment for Rivet4/YODA9 steps (`CMSSW_15_0_15` has Rivet v4):
+Use CMSSW environment for Rivet v4 steps (`CMSSW_15_0_15` has Rivet v4, you don't need to install it.):
 
 ```bash
 cd /path/to/CMSSW_15_0_15/src
@@ -52,7 +52,7 @@ Main analysis updates:
 
 Reference data update:
 
-- `RivetPlugins/CMS_2021_PAS_SMP_20_005.yoda` was migrated to the Rivet4/YODA9-compatible binned estimate format.
+- `RivetPlugins/CMS_2021_PAS_SMP_20_005.yoda` was migrated to the Rivetv4-compatible binned estimate format.
 
 ## 3. /RAW in Rivet v4 outputs
 
@@ -97,7 +97,7 @@ Main script:
 
 Relevant updates:
 
-1. YODA9 bin API support (`xMin/xMax`, `dVol`, 3D bin edges).
+1. YODA supports (`xMin/xMax`, `dVol`, 3D bin edges).
 2. Histogram path resolver with `/CMS_ -> /RAW/CMS_` fallback.
 3. Bin label mapping support for RAW/CMS paths.
 
